@@ -1,54 +1,64 @@
 {
     "sindhu":{
-        "Monday":{
-            "UG-Major Project":{
-                "start":[14, 15],
-                "end":[16, 45]
+        "Monday":[
+            {
+                "topic": "UG-Major Project",
+                "start": [14, 15],
+                "dur": 120
             }
-        },
-        "Tuesday":{
-            "EEE-2A(CE204)":{
-                "start":[12, 30],
-                "end":[13, 30]
+        ],
+        "Tuesday":[
+            {
+                "topic": "EEE-2A(CE204)",
+                "start": [12, 30],
+                "dur": 60
             },
-            "MPMC LAB:B2":{
-                "start":[14, 15],
-                "end":[16, 45]
+            {
+                "topic": "MPMC LAB:B2",
+                "start": [14, 15],
+                "dur": 120
             }
-        },
-        "Wednesday":{
-            "MPMC LAB:D3":{
-                "start":[9, 0],
-                "end":[11, 30]
+        ],
+        "Wednesday":[
+            {
+                "topic":"MPMC LAB:D3",
+                "start": [9, 0],
+                "dur": 150
             },
-            "UG-Tech Seminar":{
-                "start":[12, 0],
-                "end":[14, 0]
+            {
+                "topic": "UG-Tech Seminar",
+                "start": [12, 0],
+                "dur": 120
             },
-            "MPCMC LAB:C2":{
-                "start":[14, 45],
-                "end":[16, 45]
+            {
+                "topic": "MPCMC LAB:C2",
+                "start": [14, 45],
+                "dur": 120
             }
-        },
-        "Thursday":{
-            "EEE-2A":{
-                "start":[9, 0],
-                "end":[10, 0]
+        ],
+        "Thursday":[
+            {
+                "topic": "EEE-2A",
+                "start": [9, 0],
+                "dur": 60
             },
-            "EEE-2A(2)":{
-                "start":[14, 15],
-                "end":[15, 15]
+            {
+                "topic": "EEE-2A",
+                "start": [14, 15],
+                "dur": 60
             }
-        },
-        "Friday":{
-            "EEE-2A":{
-                "start":[9, 0],
-                "end":[10, 0]
+        ],
+        "Friday":[
+            {
+                "topic": "EEE-2A",
+                "start": [9, 0],
+                "dur": 60
             },
-            "PG-Major Project":{
-                "start":[11, 30],
-                "end":[14, 0]
+            {
+                "topic": "PG-Major Project",
+                "start": [11, 30],
+                "dur": 150
             }
-        }
+        ]
     }
 }

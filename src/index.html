@@ -55,8 +55,9 @@
         chart.draw(dataTable);
       }
 
-      function getTime(a, b) {
-        return new Date(0, 0, 0, a, b, 0);
+      function getTime(start, dur=0) {
+        console.log(new Date(0, 0, 0, start[0], start[1], 0 + (dur*60)))
+        return new Date(0, 0, 0, start[0], start[1], 0 + (dur*60));
       }
 
       const fetchData = async (url) => {
@@ -68,32 +69,22 @@
       const main = async () => {
         let rows = [];
         const data = await fetchData("data.json");
-        for(days in data.sindhu){
-          var day = data.sindhu[days]
-          for (var key in data.sindhu[days]) {
-            var val = data.sindhu[days][key];
+        for(var day in data.sindhu){
+          var sched = data.sindhu[day]
+          for (var key in sched) {
+            var val = sched[key];
+            console.log(val)
             //console.log(key);
             //console.log(val.start[0]);
             rows[rows.length] = [
-              days,
-              key,
-              getTime(val.start[0], val.start[1]),
-              getTime(val.end[0], val.end[1]),
+              day,
+              val.topic,
+              getTime(val.start),
+              getTime(val.start, val.dur),
             ];
           }
         }
 
-        for (var key in data.sindhu.tuesday) {
-          var val = data.sindhu.tuesday[key];
-          //console.log(key);
-          //console.log(val.start[0]);
-          rows[rows.length] = [
-            "tuesday",
-            key,
-            getTime(val.start[0], val.start[1]),
-            getTime(val.end[0], val.end[1]),
-          ];
-        }
         //console.log(rows, "ok")
 
         drawChart(rows);
