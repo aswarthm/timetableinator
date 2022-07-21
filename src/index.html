@@ -1,15 +1,10 @@
 <html>
   <head>
     <script src="ingress.js"></script>
-    <script
-      type="text/javascript"
-      src="https://www.gstatic.com/charts/loader.js"
-    ></script>
-    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript"src="https://www.gstatic.com/charts/loader.js"></script>
+    <script defer type="text/javascript">
       google.charts.load("current", { packages: ["timeline"] });
-      google.charts.setOnLoadCallback(drawChart);
+      
       async function drawChart(rows) {
         var container = document.getElementById("timeline");
         var chart = new google.visualization.Timeline(container);
@@ -20,14 +15,7 @@
         dataTable.addColumn({ type: "string", id: "Name" });
         dataTable.addColumn({ type: "date", id: "Start" });
         dataTable.addColumn({ type: "date", id: "End" });
-        // dataTable.addRows([
-        // [ 'Monday', 'Beginning JavaScript',       getTime(9, 0),  getTime(10, 0) ],
-        // [ 'Tuesday', 'Intermediate JavaScript',    getTime(9, 0),  getTime(9, 0) ],
-        // [ 'Wednesday', 'Advanced JavaScript',        getTime(9, 0),  getTime(9, 0) ],
-        // [ 'Thursday',   'Beginning Google Charts',    new Date(0,0,0,12,30,0), new Date(0,0,0,14,0,0) ],
-        // [ 'Friday',   'Intermediate Google Charts', new Date(0,0,0,14,30,0), new Date(0,0,0,16,0,0) ]]);
-        // var csv = google.visualization.DataTable
-        // console.log(csv);
+        
         for (let i = 0; i < rows.length; i++) {
           dataTable.addRow(rows[i]);
         }
