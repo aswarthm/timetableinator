@@ -14,36 +14,40 @@ async function drawChart(rows) {
   }
   //console.log(rows)
   //dataTable.addRows(rows);
-  var options = {};
-
+  
   google.visualization.events.addListener(chart, "ready", changeBorderRadius);
   google.visualization.events.addListener(chart, "select", changeBorderRadius);
   google.visualization.events.addListener(
     chart,
     "onmouseover",
     changeBorderRadius
-  );
-  google.visualization.events.addListener(
-    chart,
-    "onmouseout",
-    changeBorderRadius
-  );
-
-  function changeBorderRadius() {
-    let borderRadius = 4;
+    );
+    google.visualization.events.addListener(
+      chart,
+      "onmouseout",
+      changeBorderRadius
+      );
+      
+      function changeBorderRadius() {
+        let borderRadius = 4;
     chartColumns = container.getElementsByTagName("rect");
     Array.prototype.forEach.call(chartColumns, function (column) {
       if (
         column.getAttribute("fill") != "none" &&
         column.getAttribute("stroke") != "1"
-      ) {
+        ) {
         column.setAttribute("rx", borderRadius);
         column.setAttribute("ry", borderRadius);
       }
     });
   }
+  
+  var options = {
+    backgroundColor: '#f7f7f7',
+    alternatingRowStyle: false,
+};
 
-  chart.draw(dataTable);
+  chart.draw(dataTable, options);
 }
 
 function getTime(a, b) {
