@@ -1,54 +1,54 @@
 {
-    "sindhu":{
-        "Monday":{
-            "UG-Major Project":{
-                "start":[14, 15],
-                "end":[16, 45]
-            }
-        },
-        "Tuesday":{
-            "EEE-2A(CE204)":{
-                "start":[12, 30],
-                "end":[13, 30]
-            },
-            "MPMC LAB:B2":{
-                "start":[14, 15],
-                "end":[16, 45]
-            }
-        },
-        "Wednesday":{
-            "MPMC LAB:D3":{
-                "start":[9, 0],
-                "end":[11, 30]
-            },
-            "UG-Tech Seminar":{
-                "start":[12, 0],
-                "end":[14, 0]
-            },
-            "MPCMC LAB:C2":{
-                "start":[14, 45],
-                "end":[16, 45]
-            }
-        },
-        "Thursday":{
-            "EEE-2A":{
-                "start":[9, 0],
-                "end":[10, 0]
-            },
-            "EEE-2A(2)":{
-                "start":[14, 15],
-                "end":[15, 15]
-            }
-        },
-        "Friday":{
-            "EEE-2A":{
-                "start":[9, 0],
-                "end":[10, 0]
-            },
-            "PG-Major Project":{
-                "start":[11, 30],
-                "end":[14, 0]
-            }
-        }
+  "sindhu": {
+    "Monday": {
+      "315": {
+        "class": "UG-Major Project",
+        "duration": 150
+      }
+    },
+    "Tuesday": {
+      "210": {
+        "class": "EEE-2A(CE204)",
+        "duration": 60
+      },
+      "315": {
+        "class": "MPMC LAB:B2",
+        "duration": 150
+      }
+    },
+    "Wednesday": {
+      "0": {
+        "class": "MPMC LAB:D3",
+        "duration": 150
+      },
+      "180": {
+        "class": "UG-Tech Seminar",
+        "duration": 120
+      },
+      "345": {
+        "class": "MPCMC LAB:C2",
+        "duration": 120
+      }
+    },
+    "Thursday": {
+      "0": {
+        "class": "EEE-2A",
+        "duration": 60
+      },
+      "315": {
+        "class": "EEE-2A(2)",
+        "duration": 60
+      }
+    },
+    "Friday": {
+      "0": {
+        "class": "EEE-2A",
+        "duration": 60
+      },
+      "150": {
+        "class": "PG-Major Project",
+        "duration": 150
+      }
     }
+  }
 }
