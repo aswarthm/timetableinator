@@ -50,8 +50,12 @@ async function drawChart(rows) {
   chart.draw(dataTable, options);
 }
 
-function getTime(a, b) {
-  return new Date(0, 0, 0, a, b, 0);
+function getTime(a, b=0) {
+  a = parseInt(a)
+  var hr = 9 + Math.floor((a+b) / 60);
+  var min = (a+b) % 60
+  //console.log(a, b, hr, min)
+  return new Date(0, 0, 0, hr, min, 0);
 }
 
 const fetchData = async (url) => {
@@ -65,15 +69,20 @@ const main = async () => {
   const data = await fetchData("data.json");
   for (days in data.sindhu) {
     var day = data.sindhu[days];
+    //console.log(data.sindhu[days]);
     for (var key in data.sindhu[days]) {
-      var val = data.sindhu[days][key];
+      var val = day[key];
+
+      //key is start time 
+      //val contains data
+      
       //console.log(key);
       //console.log(val.start[0]);
       rows[rows.length] = [
         days,
-        key,
-        getTime(val.start[0], val.start[1]),
-        getTime(val.end[0], val.end[1]),
+        val.class,
+        getTime(key),
+        getTime(key, val.duration),
       ];
     }
   }
