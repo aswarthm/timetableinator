@@ -50,5 +50,57 @@
                 "duration": 150
             }
         }
+    },
+    "Dr. Prakash Biswagar": {
+        "Monday": {
+            "180": {
+                "class": "UG-Major project",
+                "duration": 120
+            },
+            "345": {
+                "class": "E-C(EC205)",
+                "duration": 60
+            }
+        },
+        "Tuesday": {
+            "60": {
+                "class": "E-C",
+                "duration": 60
+            },
+            "345": {
+                "class": "E-C",
+                "duration": 60
+            }
+        },
+        "Wednesday": {
+            "60": {
+                "class": "FOME-6D(EC205)",
+                "duration": 60
+            },
+            "150": {
+                "class": "UG-Major project",
+                "duration": 120
+            }
+        },
+        "Thursday": {
+            "0": {
+                "class": "PG-Major project",
+                "duration": 120
+            },
+            "150": {
+                "class": "E-C",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG Tech Seminar",
+                "duration": 150
+            }
+        },
+        "Friday": {
+            "150": {
+                "class": "FOME-6D",
+                "duration": 60
+            }
+        }
     }
 }
