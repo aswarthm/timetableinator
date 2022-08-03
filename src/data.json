@@ -1,5 +1,5 @@
 {
-    "sindhu": {
+    "Sindhu Rajendran": {
         "Monday": {
             "315": {
                 "class": "UG-Major Project",
@@ -103,7 +103,7 @@
             }
         }
     },
-  " Dr K. S Geetha": {
+    " Dr K. S Geetha": {
         "Monday":
         {
             "315":
@@ -166,6 +166,91 @@
             {
                 "class":"UG Tech Seminar",	
                 "duration":120
+            }
+        }
+    },
+    " Dr M. UTTARA KUMARI": {
+        "Monday":
+        {
+            "150":
+            {
+               "class":"SS-4A(T)(EC108) ",	
+               "duration":60
+            },
+            "315":
+            {
+                "class":"E-C PG (EC203)",
+                "duration":60
+
+
+            }
+        },
+
+        "Tuesday":
+        {
+            "0":
+            {
+                "class":"SS-4A",	
+                "duration":60
+            },
+            "150":
+            {
+                "class":"E-C PG",	
+                "duration":60
+            },
+            "315":
+            {
+                "class":"UG MAJOR PROJECT",
+                "duration":150
+            }
+        },
+        
+       "Wednesday":
+       {
+        "210":
+            {
+                "class":"E-C PG",	
+                "duration":60
+            },
+            "315":
+            {
+                "class":"UG MAJOR PROJECT",
+                "duration":150
+            }  
+       },
+
+       "Thursday":
+        {
+            "0":
+            {
+                "class":"E-C PG",	
+                "duration":60
+            },
+            "210":
+            {
+                "class":"SS-4A ",	
+                "duration":60
+            },
+            "315":
+            {
+                "class":"UG MAJOR PROJECT",
+                "duration":150
+            }  
+       
+        },
+
+        "Friday":
+        {
+           
+            "150":
+            {
+                "class":"SS-4A",	
+                "duration":60
+            },
+            "315":
+            {
+                "class":"UG MAJOR PROJECT",
+                "duration":150
             }
         }
     } 
