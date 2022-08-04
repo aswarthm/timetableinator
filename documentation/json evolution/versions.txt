@@ -1,0 +1,43 @@
+//ver1
+{
+    "sindhu":{
+        "Monday":{
+            "UG-Major Project":{
+                "start":[14, 15],
+                "end":[16, 45]
+            }
+        },
+        "Tuesday":{
+            "MPMC LAB:B2":{
+                "start":[12, 30],
+                "end":[13, 30]
+            },
+            "MPMC LAB:B2":{
+                "start":[14, 15],
+                "end":[16, 45]
+            }
+        }
+    }
+}
+
+//ver2
+{
+    "sindhu": {
+        "Monday": {
+            "315": {
+                "class": "UG-Major Project",
+                "duration": 150
+            }
+        },
+        "Tuesday": {
+            "210": {
+                "class": "MPMC LAB:B2",
+                "duration": 60
+            },
+            "315": {
+                "class": "MPMC LAB:B2",
+                "duration": 150
+            }
+        }
+    }
+}
