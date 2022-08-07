@@ -1,0 +1,8 @@
+git
+custom timestamps
+separate branch for data
+multiple languages used
+12 24 hr format time
+hosting
+Customisable website?
+  Like the edge radius, colours and all
