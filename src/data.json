@@ -51,7 +51,7 @@
             }
         }    
     },
-    "Dr. Prakash Biswagar": {
+    "Dr Prakash Biswagar": {
         "Monday": {
             "180": {
                 "class": "UG-Major project",
@@ -103,7 +103,7 @@
             }
         }
     },
-  " Dr K. S Geetha": {
+    "Dr K S Geetha": {
         "Monday":
         {
             "315":
@@ -169,7 +169,7 @@
             }
         }
     },
-    " Dr M. Uttara Kumari": {
+    "Dr M Uttara Kumari": {
         "Monday":
         {
             "150":
@@ -253,123 +253,7 @@
                 "duration":150
             }
         }
-    },
-    "Dr. Prakash Biswagar": {
-        "Monday": {
-            "180": {
-                "class": "UG-Major project",
-                "duration": 120
-            },
-            "345": {
-                "class": "E-C(EC205)",
-                "duration": 60
-            }
-        },
-        "Tuesday": {
-            "60": {
-                "class": "E-C",
-                "duration": 60
-            },
-            "345": {
-                "class": "E-C",
-                "duration": 60
-            }
-        },
-        "Wednesday": {
-            "60": {
-                "class": "FOME-6D(EC205)",
-                "duration": 60
-            },
-            "150": {
-                "class": "UG-Major project",
-                "duration": 120
-            }
-        },
-        "Thursday": {
-            "0": {
-                "class": "PG-Major project",
-                "duration": 120
-            },
-            "150": {
-                "class": "E-C",
-                "duration": 60
-            },
-            "315": {
-                "class": "UG Tech Seminar",
-                "duration": 150
-            }
-        },
-        "Friday": {
-            "150": {
-                "class": "FOME-6D",
-                "duration": 60
-            }
-        }
-    },
-  " Dr K. S Geetha": {
-        "Monday":
-        {
-            "315":
-            {
-               "class":"UG-Major project",	
-               "duration":120
-            }  
-        },
-
-        "Tuesday":
-        {
-            "240":
-            {
-                "class":"EEE(T)-2A(CE204)",	
-                "duration":60
-            },
-            "345":
-            {
-                "class":"PG- Major Project ",	
-                "duration":120
-            }
-        },
-        
-       "Wednesday":
-       {
-        "150":
-            {
-                "class":"PG-Major project",	
-                "duration":120
-            }  
-       },
-
-       "Thursday":
-        {
-            "0":
-            {
-                "class":"EEE-2A",	
-                "duration":60
-            },
-            "150":
-            {
-                "class":"UG-Major project",	
-                "duration":120
-            },
-            "315":
-            {
-                "class":"EEE(T)-2A",	
-                "duration":120
-            }
-        },
-
-        "Friday":
-        {
-            "0":
-            {
-                "class":"EEE-2A",	
-                "duration":60
-            },
-            "150":
-            {
-                "class":"UG Tech Seminar",	
-                "duration":120
-            }
-        }
-    } 
+    }
+    
+    
 }
