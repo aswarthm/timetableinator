@@ -96,23 +96,8 @@ function populateChartData(choice) {
   drawChart(rows);
 }
 
-function emptyTable(){
-  let rows = []
-  var days = ["Monday", "Tuesday", "Wednesday", "Thurdsay", "Friday"]
-  for(var day = 0; day<days.length; day++){
-    for(let hour = 0; hour < (17-9); hour++){//17-9 because custom timestamp
-    rows[rows.length] = [
-      days[day],
-      getTime(hour*60).getHours() + " - " + getTime(hour*60, 60).getHours(),
-      getTime(hour*60),
-      getTime(hour*60, 60),
-    ];
-  }
-  }
-  drawChart(rows);
-}
 
-const fetchData = async (url) => {
+async function fetchData(url){
   const jsondata = await fetch(url);
   const data = await jsondata.json();
   return data;
@@ -123,7 +108,6 @@ const main = async () => {
   populateDropdown(data);
 
   populateChartData(Object.keys(data)[0]);
-  //emptyTable()
 
   //console.log(rows, "ok")
 };

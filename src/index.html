@@ -1,25 +1,28 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css"></link>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"></link>
+  <title>Home</title>
+</head>
+<body>
+  <div>
+    <select id="listTeach" onchange="populateChartData(this.value)">
+      <option> </option>
+    </select>
+  </div>
   
-  <body>
-    <div>
-      <select id="listTeach" onchange="populateChartData(this.value)">
-        <option>yes</option>
-        <option>no</option>
-      </select>
-    </div>
-    
-    <div id="timeline"></div>
-    
-    <script type="text/javascript"src="https://www.gstatic.com/charts/loader.js"></script>
-    <script defer type="text/javascript" src="app.js"></script>
-    <script src="ingress.js"></script>
-    
-  </body>
+  <div id="timeline"></div>
+  
+  <script type="text/javascript"src="https://www.gstatic.com/charts/loader.js"></script>
+  <script defer type="text/javascript" src="app.js"></script>
+  <script src="ingress.js"></script>
+</body>
 </html>
+
+
 
 <!--
         dataTable.addRows([
