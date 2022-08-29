@@ -50,21 +50,38 @@ async function drawChart(rows) {
 
   
 
-  function emptyTable(){
+  function emptyTable(curDay,hr1,min1,hr2,min2){
     let rows = []
     var days = ["Monday", "Tuesday", "Wednesday", "Thurdsay", "Friday"]
-    for(var day = 0; day<days.length; day++){
-      for(let hour = 0; hour < (17-9); hour++){//17-9 because custom timestamp
-      rows[rows.length] = [
-        days[day],
-        getTime(hour*60).getHours() + " - " + getTime(hour*60, 60).getHours(),
-        getTime(hour*60),
-        getTime(hour*60, 60),
-      ];
-    }
-    }
-    drawChart(rows);
+    // for(var day = 0; day<days.length; day++){
+    //   for(let hour = 0; hour < (17-9); hour++){//17-9 because custom timestamp
+    //   rows[rows.length] = [
+    //     days[day],
+    //     getTime(hour*60).getHours() + " - " + getTime(hour*60, 60).getHours(),
+    //     getTime(hour*60),
+    //     getTime(hour*60, 60),
+    //   ];
+    // }
+    // }
+    
+    console.log(hr1,min1,hr2,min2)
+
+    for (var i in days){
+      day = days[i]
+      
+      console.log(curDay == day)
+         rows[rows.length] = [day,"", new Date(0,0,0,9,0,0),new Date(0,0,0,9,0,0)]
+         rows[rows.length] = [day,"", new Date(0,0,0,17,0,0),new Date(0,0,0,17,0,0)]
+
+      if (day==curDay){
+        
+        rows[rows.length] = [day,"Timeslot", new Date(0,0,0,hr1,min1,0), new Date(0,0,0,hr2,min2,0)]
+      }
+
   }
+  drawChart(rows)
+
+}
 
 
   function getTime(a, b = 0) {
@@ -84,11 +101,11 @@ async function drawChart(rows) {
   function findTeachers(day, start, duration){//start time and duration of required slot
     
 
-
-    rows=[]
+    listTeachers = {}
     
     for (var teacher in data){
 
+        var dailyLoad = 0
 
         var schedule = data[teacher][day]
         var flag = 0
@@ -97,6 +114,7 @@ async function drawChart(rows) {
         for (var st in schedule){
           st = parseInt(st)
           dur = parseInt(schedule[st].duration)
+          dailyLoad += dur
 
           //console.log(teacher, start, duration, st, dur)
 
@@ -107,23 +125,29 @@ async function drawChart(rows) {
         }
         if (!flag){
           //console.log("yeeeeeeeeeee", teacher, st, dur)
-          rows[rows.length] = teacher
+          listTeachers[teacher] = dailyLoad
         }else{
           //console.log("naaaaaaaaaaaaaaa")
         }
 
-        //var len = Object.keys(schedule).length
-        // for (var i = 0; i < len; i++){
-        //     if(i>0){
-        //         if(Object.keys(schedule)[i-1]*60 + Object.keys(schedule)[i-1]["duration"] < start*60){
-        //             console.log("hhhhhhhhhhhhhhhhhhh")
-        //         }
-        //     }
-        //     var startHour = Object.keys(schedule)[i]
-        //     console.log(teacher)
-        // }
+   
     }
-    console.log(rows)
+    console.log(listTeachers)
+
+    //delete listTeachers["Sindhu Rajendran"]
+    /*
+    minTeacher = ""
+    minLoad = 600
+    for (var t in listTeachers){
+      if (listTeachers[t] < minLoad){
+        minTeacher = t
+        minLoad = listTeachers[t]
+      }
+
+    }
+    console.log(minTeacher,minLoad)
+    delete listTeachers[minTeacher]
+    */
   }
 
 function idklolremane(time){
@@ -155,7 +179,8 @@ function idklolremane(time){
     console.log(start, duration)
     var curDay = new Date().getDay()
     var days = ["Monday", "Tuesday", "Wednesday", "Thurdsay", "Friday"]
-
+  
+    emptyTable(days[curDay-1],hr1,min1,hr2,min2)
 
     findTeachers(days[curDay-1], start, duration)
 
