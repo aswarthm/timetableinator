@@ -133,6 +133,7 @@ async function drawChart(rows) {
    
     }
     console.log(listTeachers)
+    fillTable(listTeachers)
 
     //delete listTeachers["Sindhu Rajendran"]
     /*
@@ -160,7 +161,7 @@ function idklolremane(time){
   const main = async () => {
     data = await fetchData("data.json")
     //emptyTable()
-    findTeachers("Monday", (9-9)*60, 60)
+    //findTeachers("Monday", (9-9)*60, 60)
   };
   //main()
   google.charts.load("current", { packages: ["timeline"], callback: main });
@@ -177,12 +178,25 @@ function idklolremane(time){
     var duration = (hr2-9)*60 + min2 - ((hr1-9)*60 + min1)
 
     console.log(start, duration)
-    var curDay = new Date().getDay()
+    var curDay = new Date().getDay()   ///////////////////////////////////////////////////////Make it input day
     var days = ["Monday", "Tuesday", "Wednesday", "Thurdsay", "Friday"]
   
     emptyTable(days[curDay-1],hr1,min1,hr2,min2)
 
     findTeachers(days[curDay-1], start, duration)
 
+
+  }
+
+  function fillTable(listTeachers){
+    htmlString = ""
+    var i = 0
+    for (var t in listTeachers){
+      i = i+1
+      htmlString += '<tr><th scope="row" align="left">' + i + '</th><td class="align">' + t + '</td><td class="align">' + listTeachers[t]/60 + '</td></tr>'
+    }
+    document.getElementById("freeTeachers").innerHTML = htmlString
+
+    /*<tr><th scope="row" align="left">1</th><td class="align">Sindhu</td><td class="align">3</td></tr> */
 
   }
