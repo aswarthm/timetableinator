@@ -195,6 +195,7 @@ function idklolremane(time){
       i = i+1
       htmlString += '<tr><th scope="row" align="left">' + i + '</th><td class="align">' + t + '</td><td class="align">' + listTeachers[t]/60 + '</td></tr>'
     }
+    
     document.getElementById("freeTeachers").innerHTML = htmlString
 
     /*<tr><th scope="row" align="left">1</th><td class="align">Sindhu</td><td class="align">3</td></tr> */
