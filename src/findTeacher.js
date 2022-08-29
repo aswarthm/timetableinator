@@ -82,18 +82,14 @@ async function drawChart(rows) {
   };
 
   function findTeachers(day, start, duration){//start time and duration of required slot
-    /*
-      prevSt+prevDur < start
-      start + duration < st
-      
-      or
+    
 
-      st -(prevSt+prevDur) = time between 2 classes, this time should be >= start+duration
-      
-    */
+
     rows=[]
     
     for (var teacher in data){
+
+
         var schedule = data[teacher][day]
         var flag = 0
         var st = 0
@@ -102,17 +98,18 @@ async function drawChart(rows) {
           st = parseInt(st)
           dur = parseInt(schedule[st].duration)
 
-          //console.log(teacher, start, duration, st, dur, prevSt, prevDur)
-          if(!(st+dur<start || st>start+duration)){
+          //console.log(teacher, start, duration, st, dur)
+
+          if(st+dur > start && st<start+duration){
             flag = 1
             //console.log("yaaaa", teacher, st, dur)
           }
         }
         if (!flag){
-          console.log("yeeeeeeeeeee", teacher, st, dur)
+          //console.log("yeeeeeeeeeee", teacher, st, dur)
           rows[rows.length] = teacher
         }else{
-          console.log("naaaaaaaaaaaaaaa")
+          //console.log("naaaaaaaaaaaaaaa")
         }
 
         //var len = Object.keys(schedule).length
@@ -143,3 +140,24 @@ function idklolremane(time){
   };
   //main()
   google.charts.load("current", { packages: ["timeline"], callback: main });
+
+  function takeTime(){
+    var time1 = document.getElementById("time1").value
+    var time2 = document.getElementById("time2").value
+    var hr1 = parseInt(time1.split(":")[0],10)
+    var min1 = parseInt(time1.split(":")[1],10)
+    var hr2= parseInt(time2.split(":")[0],10)
+    var min2 = parseInt(time2.split(":")[1],10)
+
+    var start = (hr1-9)*60 + min1
+    var duration = (hr2-9)*60 + min2 - ((hr1-9)*60 + min1)
+
+    console.log(start, duration)
+    var curDay = new Date().getDay()
+    var days = ["Monday", "Tuesday", "Wednesday", "Thurdsay", "Friday"]
+
+
+    findTeachers(days[curDay-1], start, duration)
+
+
+  }
