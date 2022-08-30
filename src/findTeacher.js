@@ -184,19 +184,12 @@ function idklolremane(time){
 
     var start = (hr1-9)*60 + min1
     var duration = (hr2-9)*60 + min2 - ((hr1-9)*60 + min1)
-    if (duration<0){
-      alert("End time can't be before start time")
-      duration = 0-duration
-      start = start - duration
-
-    }
-
+    
     console.log(start, duration)
 
     //var curDay = new Date().getDay()   
 
     var curDate = getDate(document.getElementById("dateInput").value)
-
     
     if (curDate == "Invalid Date"){       //By default takes current day
       curDate = new Date()                    
@@ -206,10 +199,14 @@ function idklolremane(time){
 
 
     var days = ["Monday", "Tuesday", "Wednesday", "Thurdsay", "Friday"]
-  
+
+    if (duration<=0){
+      alert("End time must be after start time")
+    }
+    else{
     emptyChart(days[curDay-1],start,duration)
 
-    findTeachers(days[curDay-1], start, duration)
+    findTeachers(days[curDay-1], start, duration)}
 
 
   }
