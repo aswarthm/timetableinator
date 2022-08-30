@@ -48,11 +48,19 @@ async function drawChart(rows) {
   }
 
 
-  
+  function emptyChart(curDay,start,duration){
 
-  function emptyTable(curDay,hr1,min1,hr2,min2){
+    hr1 = parseInt(start/60) + 9
+    min1 = start%60
+    hr2 = parseInt((start + duration)/60) + 9
+    min2 = (start+duration)%60
+
     let rows = []
     var days = ["Monday", "Tuesday", "Wednesday", "Thurdsay", "Friday"]
+
+
+
+
     // for(var day = 0; day<days.length; day++){
     //   for(let hour = 0; hour < (17-9); hour++){//17-9 because custom timestamp
     //   rows[rows.length] = [
@@ -176,12 +184,30 @@ function idklolremane(time){
 
     var start = (hr1-9)*60 + min1
     var duration = (hr2-9)*60 + min2 - ((hr1-9)*60 + min1)
+    if (duration<0){
+      alert("End time can't be before start time")
+      duration = 0-duration
+      start = start - duration
+
+    }
 
     console.log(start, duration)
-    var curDay = new Date().getDay()   ///////////////////////////////////////////////////////Make it input day
+
+    //var curDay = new Date().getDay()   
+
+    var curDate = getDate(document.getElementById("dateInput").value)
+
+    
+    if (curDate == "Invalid Date"){       //By default takes current day
+      curDate = new Date()                    
+    }
+    
+    var curDay = curDate.getDay()
+
+
     var days = ["Monday", "Tuesday", "Wednesday", "Thurdsay", "Friday"]
   
-    emptyTable(days[curDay-1],hr1,min1,hr2,min2)
+    emptyChart(days[curDay-1],start,duration)
 
     findTeachers(days[curDay-1], start, duration)
 
@@ -201,3 +227,19 @@ function idklolremane(time){
     /*<tr><th scope="row" align="left">1</th><td class="align">Sindhu</td><td class="align">3</td></tr> */
 
   }
+
+  function getDate(dateString){
+    year = parseInt(dateString.split("-")[0])
+    month = parseInt(dateString.split("-")[1])   
+    day = parseInt(dateString.split("-")[2])
+    return new Date(year,month-1,day,0,0,0)    //-1 because Date() takes zero based indexing for month
+
+  }
+
+
+
+  /* Takes input date
+      If invalid date, takes current date
+      fix end time<start time
+  
+  */
