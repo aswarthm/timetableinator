@@ -1,4 +1,5 @@
 var data;
+var events;
 async function drawChart(rows) {
   var container = document.getElementById("timeline");
   var chart = new google.visualization.Timeline(container);
@@ -18,8 +19,16 @@ async function drawChart(rows) {
 
   google.visualization.events.addListener(chart, "ready", changeBorderRadius);
   google.visualization.events.addListener(chart, "select", changeBorderRadius);
-  google.visualization.events.addListener(chart, "onmouseover", changeBorderRadius);
-  google.visualization.events.addListener(chart, "onmouseout", changeBorderRadius);
+  google.visualization.events.addListener(
+    chart,
+    "onmouseover",
+    changeBorderRadius
+  );
+  google.visualization.events.addListener(
+    chart,
+    "onmouseout",
+    changeBorderRadius
+  );
 
   function changeBorderRadius() {
     let borderRadius = 4;
@@ -96,15 +105,26 @@ function populateChartData(choice) {
   drawChart(rows);
 }
 
-
-async function fetchData(url){
+async function fetchData(url) {
   const jsondata = await fetch(url);
   const data = await jsondata.json();
   return data;
-};
+}
+
+function mergeJson(a, b) {
+  for (var teacher in b) {
+    for (var day in b[teacher]) {
+      for (var clas in b[teacher][day]) {
+        a[teacher][day][clas] = b[teacher][day][clas];
+      }
+    }
+  }
+}
 
 const main = async () => {
   data = await fetchData("data.json");
+  events = await fetchData("events.json");
+  mergeJson(data, events);
   populateDropdown(data);
 
   populateChartData(Object.keys(data)[0]);

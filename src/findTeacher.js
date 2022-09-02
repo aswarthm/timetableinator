@@ -75,7 +75,7 @@ async function drawChart(rows) {
     console.log(hr1,min1,hr2,min2)
 
     for (var i in days){
-      day = days[i]
+      var day = days[i]
       
       console.log(curDay == day)
          rows[rows.length] = [day,"", new Date(0,0,0,9,0,0),new Date(0,0,0,9,0,0)]
