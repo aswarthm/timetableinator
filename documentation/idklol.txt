@@ -1,0 +1,13 @@
+start = 3
+duration = 60
+end = 4
+
+st=2
+dur=60
+end= 3
+
+st+dur<start || st>start+duration
+445<3 || 345>4
+st =3:45
+dur=60
+end=4:45
