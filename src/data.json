@@ -210,5 +210,312 @@
                 "duration": 150
             }
         }
+    },
+    " Dr. RAVISHANKAR. S": {
+        "Monday": {
+            "60": {
+                "class": "ACS2(EC203) ",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Tuesday": {
+            "60": {
+                "class": "ACS2",
+                "duration": 60
+            },
+            "150": {
+                "class": "PG MAJOR PROJECT\t",
+                "duration": 120
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Wednesday": {
+            "150": {
+                "class": "ACS2",
+                "duration": 60
+            }
+        },
+        "Thursday": {},
+        "Friday": {
+            "0": {
+                "class": "ACS2",
+                "duration": 60
+            },
+            "150": {
+                "class": "PG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        }
+    },
+    "Dr UMA B V": {
+        "Monday": {
+            "0": {
+                "class": "HDL-4A(EC108)",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG-Major project\t",
+                "duration": 120
+            }
+        },
+        "Tuesday": {
+            "150": {
+                "class": "PG-Major project\t",
+                "duration": 120
+            }
+        },
+        "Wednesday": {
+            "315": {
+                "class": "UG-Major project\t",
+                "duration": 120
+            }
+        },
+        "Thursday": {
+            "0": {
+                "class": "HDL-4A",
+                "duration": 60
+            },
+            "150": {
+                "class": "PG-Major project\t",
+                "duration": 120
+            },
+            "315": {
+                "class": "UG Tech Seminar\t",
+                "duration": 120
+            }
+        },
+        "Friday": {
+            "210": {
+                "class": "HDL-4A",
+                "duration": 60
+            }
+        }
+    },
+    " Dr B S KARIYAPPA": {
+        "Monday": {
+            "60": {
+                "class": "E-D PG(EC109)",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Tuesday": {
+            "60": {
+                "class": "MPMC-4B(EC103)",
+                "duration": 60
+            },
+            "210": {
+                "class": "E-D PG",
+                "duration": 60
+            }
+        },
+        "Wednesday": {
+            "0": {
+                "class": "MPMC-4B",
+                "duration": 60
+            },
+            "150": {
+                "class": "PG MAJOR PROJECT\t",
+                "duration": 120
+            },
+            "375": {
+                "class": "E-D PG",
+                "duration": 60
+            }
+        },
+        "Thursday": {
+            "210": {
+                "class": "MPMC-4B",
+                "duration": 60
+            }
+        },
+        "Friday": {
+            "0": {
+                "class": "E-D PG",
+                "duration": 60
+            },
+            "150": {
+                "class": "PG MAJOR PROJECT\t",
+                "duration": 120
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        }
+    },
+    " Dr H V RAVISH ARADHYA": {
+        "Monday": {
+            "210": {
+                "class": "SVD(EC109) ",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Tuesday": {
+            "180": {
+                "class": "SVD",
+                "duration": 60
+            },
+            "195": {
+                "class": " PG MAJOR PROJECT\t",
+                "duration": 240
+            }
+        },
+        "Wednesday": {
+            "150": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Thursday": {
+            "150": {
+                "class": "SVD (T)",
+                "duration": 60
+            }
+        },
+        "Friday": {
+            "60": {
+                "class": "SVD",
+                "duration": 60
+            },
+            "315": {
+                "class": " PG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        }
+    },
+    " Dr K R USHA RANI": {
+        "Monday": {
+            "150": {
+                "class": "ECC PG ",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Tuesday": {
+            "0": {
+                "class": "ECC PG(EC203)",
+                "duration": 60
+            },
+            "210": {
+                "class": "EEE(T)-2I ASE001",
+                "duration": 60
+            }
+        },
+        "Wednesday": {
+            "0": {
+                "class": "PG MAJOR PROJECT \t",
+                "duration": 120
+            },
+            "315": {
+                "class": "EEE-2I",
+                "duration": 60
+            }
+        },
+        "Thursday": {
+            "60": {
+                "class": "EEE-2I",
+                "duration": 60
+            },
+            "210": {
+                "class": "ECC PG ",
+                "duration": 60
+            }
+        },
+        "Friday": {
+            "60": {
+                "class": "ECC(T) PG",
+                "duration": 60
+            },
+            "210": {
+                "class": "EEE(T)-2I",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT \t",
+                "duration": 120
+            }
+        }
+    },
+    " Dr  VEENA DEVI S V": {
+        "Monday": {
+            "0": {
+                "class": "SS-4B(EC103)",
+                "duration": 60
+            },
+            "150": {
+                "class": "EEE(T)-2D(ME004)",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG-Major project\t",
+                "duration": 120
+            }
+        },
+        "Tuesday": {
+            "150": {
+                "class": "PG-Major project\t",
+                "duration": 120
+            }
+        },
+        "Wednesday": {
+            "0": {
+                "class": "EEE-2D",
+                "duration": 60
+            },
+            "150": {
+                "class": "SS-4B(T)",
+                "duration": 60
+            },
+            "315": {
+                "class": "PG-Major project\t",
+                "duration": 120
+            }
+        },
+        "Thursday": {
+            "0": {
+                "class": "UG- Tech seminar\t",
+                "duration": 120
+            },
+            "150": {
+                "class": "SS-4B",
+                "duration": 60
+            },
+            "315": {
+                "class": "EEE(T)-2D",
+                "duration": 60
+            }
+        },
+        "Friday": {
+            "0": {
+                "class": " EEE-2D",
+                "duration": 60
+            },
+            "60": {
+                "class": "SS-4B",
+                "duration": 60
+            },
+            "150": {
+                "class": "UG-Major project\t",
+                "duration": 120
+            }
+        }
     }
 }
