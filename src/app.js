@@ -19,20 +19,12 @@ async function drawChart(rows) {
 
   google.visualization.events.addListener(chart, "ready", changeBorderRadius);
   google.visualization.events.addListener(chart, "select", changeBorderRadius);
-  google.visualization.events.addListener(
-    chart,
-    "onmouseover",
-    changeBorderRadius
-  );
-  google.visualization.events.addListener(
-    chart,
-    "onmouseout",
-    changeBorderRadius
-  );
+  google.visualization.events.addListener(chart, "onmouseover", changeBorderRadius);
+  google.visualization.events.addListener(chart, "onmouseout", changeBorderRadius);
 
   function changeBorderRadius() {
     let borderRadius = 4;
-    chartColumns = container.getElementsByTagName("rect");
+    var chartColumns = container.getElementsByTagName("rect");
     Array.prototype.forEach.call(chartColumns, function (column) {
       if (
         column.getAttribute("fill") != "none" &&
@@ -60,16 +52,19 @@ function getTime(a, b = 0) {
   return new Date(0, 0, 0, hr, min, 0);
 }
 
-function populateDropdown(data) {
-  let teacherList = "";
+async function populateDropdown(value) {
+  const data = await fetchData(String(value) + ".json")
+  let list = "";
 
-  for (var teacher in data) {
-    teacherList += '<option value="' + teacher + '">' + teacher + "</option>";
+  for (var item in data) {
+    list += '<option value="' + item + '">' + item + "</option>";
   }
-  document.getElementById("listTeach").innerHTML = teacherList;
+  document.getElementById("listTeach").innerHTML = list;
 }
 
+
 function populateChartData(choice) {
+  document.getElementById("volName").innerHTML=choice
   let rows = [];
   let teacherData = data[choice];
   for (var days in teacherData) {
@@ -111,21 +106,22 @@ async function fetchData(url) {
   return data;
 }
 
-function mergeJson(a, b) {
-  for (var teacher in b) {
-    for (var day in b[teacher]) {
-      for (var clas in b[teacher][day]) {
-        a[teacher][day][clas] = b[teacher][day][clas];
-      }
-    }
-  }
-}
+// function mergeJson(a, b) {
+//   for (var teacher in b) {
+//     for (var day in b[teacher]) {
+//       for (var clas in b[teacher][day]) {
+//         a[teacher][day][clas] = b[teacher][day][clas];
+//       }
+//     }
+//   }
+// }
 
 const main = async () => {
   data = await fetchData("data.json");
-  events = await fetchData("events.json");
-  mergeJson(data, events);
-  populateDropdown(data);
+  //events = await fetchData("events.json");
+  //mergeJson(data, events);
+  
+  populateDropdown("data");
 
   populateChartData(Object.keys(data)[0]);
 

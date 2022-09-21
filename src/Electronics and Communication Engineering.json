@@ -1,0 +1,122 @@
+{
+    " Dr  VEENA DEVI S V": {
+        "Monday": {
+            "0": {
+                "class": "SS-4B(EC103)",
+                "duration": 60
+            },
+            "150": {
+                "class": "EEE(T)-2D(ME004)",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG-Major project\t",
+                "duration": 120
+            }
+        },
+        "Tuesday": {
+            "150": {
+                "class": "PG-Major project\t",
+                "duration": 120
+            }
+        },
+        "Wednesday": {
+            "0": {
+                "class": "EEE-2D",
+                "duration": 60
+            },
+            "150": {
+                "class": "SS-4B(T)",
+                "duration": 60
+            },
+            "315": {
+                "class": "PG-Major project\t",
+                "duration": 120
+            }
+        },
+        "Thursday": {
+            "0": {
+                "class": "UG- Tech seminar\t",
+                "duration": 120
+            },
+            "150": {
+                "class": "SS-4B",
+                "duration": 60
+            },
+            "315": {
+                "class": "EEE(T)-2D",
+                "duration": 60
+            }
+        },
+        "Friday": {
+            "0": {
+                "class": " EEE-2D",
+                "duration": 60
+            },
+            "60": {
+                "class": "SS-4B",
+                "duration": 60
+            },
+            "150": {
+                "class": "UG-Major project\t",
+                "duration": 120
+            }
+        }
+    },
+    " Dr B S KARIYAPPA": {
+        "Monday": {
+            "60": {
+                "class": "E-D PG(EC109)",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Tuesday": {
+            "60": {
+                "class": "MPMC-4B(EC103)",
+                "duration": 60
+            },
+            "210": {
+                "class": "E-D PG",
+                "duration": 60
+            }
+        },
+        "Wednesday": {
+            "0": {
+                "class": "MPMC-4B",
+                "duration": 60
+            },
+            "150": {
+                "class": "PG MAJOR PROJECT\t",
+                "duration": 120
+            },
+            "375": {
+                "class": "E-D PG",
+                "duration": 60
+            }
+        },
+        "Thursday": {
+            "210": {
+                "class": "MPMC-4B",
+                "duration": 60
+            }
+        },
+        "Friday": {
+            "0": {
+                "class": "E-D PG",
+                "duration": 60
+            },
+            "150": {
+                "class": "PG MAJOR PROJECT\t",
+                "duration": 120
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        }
+    }
+}
