@@ -56,7 +56,7 @@ async function drawChart(rows) {
     min2 = (start+duration)%60
 
     let rows = []
-    var days = ["Monday", "Tuesday", "Wednesday", "Thurdsay", "Friday"]
+    var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
 
 
