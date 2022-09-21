@@ -168,6 +168,8 @@ function idklolremane(time){
 
   const main = async () => {
     data = await fetchData("data.json")
+
+    emptyChart("Friday",480,0)
     //emptyTable()
     //findTeachers("Monday", (9-9)*60, 60)
   };
