@@ -1,8 +1,8 @@
 
 var data
 
-async function drawChart(rows) {
-    var container = document.getElementById("findTeachers");
+async function drawChart(rows, elementId) {
+    var container = document.getElementById(elementId);
     var chart = new google.visualization.Timeline(container);
     var dataTable = new google.visualization.DataTable();
   
@@ -87,7 +87,7 @@ async function drawChart(rows) {
       }
 
   }
-  drawChart(rows)
+  drawChart(rows, "findTeachers")
 
 }
 
@@ -200,7 +200,7 @@ function idklolremane(time){
     var curDay = curDate.getDay()
 
 
-    var days = ["Monday", "Tuesday", "Wednesday", "Thurdsay", "Friday"]
+    var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
     if (duration<=0){
       alert("End time must be after start time")
@@ -216,12 +216,20 @@ function idklolremane(time){
   function fillTable(listTeachers){
     htmlString = ""
     var i = 0
-    for (var t in listTeachers){
+    for (var t in listTeachers){   
       i = i+1
-      htmlString += '<tr><th scope="row" align="left">' + i + '</th><td class="align">' + t + '</td><td class="align">' + listTeachers[t]/60 + '</td></tr>'
+      htmlString += '<tr class="tablerow" id="'+t+'"><th scope="row" align="left">' + i + '</th><td class="align">'  + t + '<td class="align">' + listTeachers[t]/60 + '</td></tr>'
     }
     
     document.getElementById("freeTeachers").innerHTML = htmlString
+
+    var tableRows = document.getElementsByClassName("tablerow")
+
+    for (let i=0; i<tableRows.length;i++){
+      tableRows[i].addEventListener("click", function(){
+        populateChartData(tableRows[i].id)
+      })
+    }
 
     /*<tr><th scope="row" align="left">1</th><td class="align">Sindhu</td><td class="align">3</td></tr> */
 
@@ -235,6 +243,43 @@ function idklolremane(time){
 
   }
 
+  function populateChartData(choice) {
+  
+    let rows = [];
+    let teacherData = data[choice];
+    for (var days in teacherData) {
+      //for each day in week
+      var day = teacherData[days];
+      let teacherLoad = 0;
+      //console.log(data.sindhu[days]);
+      for (var key in day) {
+        //for each class in day
+        var val = day[key];
+  
+        //key is start time
+        //val contains data
+  
+        //console.log(key);
+        //console.log(val.start[0]);
+        teacherLoad += val.duration;
+        rows[rows.length] = [
+          days,
+          val.class,
+          getTime(key),
+          getTime(key, val.duration),
+        ];
+      }
+      rows[rows.length] = [
+        days,
+        String(teacherLoad / 60) + " Hours",
+        getTime(9 * 60),
+        getTime(9 * 60, teacherLoad / 5),
+      ];
+    }
+  
+    drawChart(rows, "teacherChart");
+  }
+  
 
 
   /* Takes input date
