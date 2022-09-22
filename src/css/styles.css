@@ -15,11 +15,26 @@
 .option{
   border-radius: 8px;
 }
-#timeline, #findTeachers{
+#timeline, #findTeachers, #teacherChart{
     width:95%; 
     padding-left:34px; 
     padding-right: 20px; 
     height: 260px;
+}
+
+.inputData{
+  padding: 20px;
+}
+
+#btnSearch{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.inputData > input{
+  margin-right: 10px;
+  border-radius: 6px;
+  padding: 4px;
 }
 
 #divTeach{
@@ -201,4 +216,12 @@
 
 #aMoreInfo:hover{
   color: #000000;
+}
+
+
+tbody > tr:hover {
+  background-color:#c6cbff;
+}
+.tablerow{
+  padding: auto;
 }

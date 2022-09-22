@@ -167,15 +167,19 @@ function idklolremane(time){
 }
 
   const main = async () => {
+    document.getElementById("dateInput").value = new Date().toISOString().split('T')[0]
+
+    var hour = new Date().toTimeString().split(' ')[0].split(':')[0]
+    document.getElementById("time1").value = hour + ":00"
+    document.getElementById("time2").value = String(parseInt(hour)+1) + ":00"
+    console.log(hour)
     data = await fetchData("data.json")
 
     emptyChart("Friday",480,0)
     //emptyTable()
     //findTeachers("Monday", (9-9)*60, 60)
   };
-  //main()
-  google.charts.load("current", { packages: ["timeline"], callback: main });
-
+  
   function takeTime(){
     var time1 = document.getElementById("time1").value
     var time2 = document.getElementById("time2").value
@@ -183,14 +187,14 @@ function idklolremane(time){
     var min1 = parseInt(time1.split(":")[1],10)
     var hr2= parseInt(time2.split(":")[0],10)
     var min2 = parseInt(time2.split(":")[1],10)
-
+    
     var start = (hr1-9)*60 + min1
     var duration = (hr2-9)*60 + min2 - ((hr1-9)*60 + min1)
     
     console.log(start, duration)
-
+    
     //var curDay = new Date().getDay()   
-
+    
     var curDate = getDate(document.getElementById("dateInput").value)
     
     if (curDate == "Invalid Date"){       //By default takes current day
@@ -198,7 +202,7 @@ function idklolremane(time){
     }
     
     var curDay = curDate.getDay()
-
+    
 
     var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
@@ -206,45 +210,45 @@ function idklolremane(time){
       alert("End time must be after start time")
     }
     else{
-    emptyChart(days[curDay-1],start,duration)
+      emptyChart(days[curDay-1],start,duration)
+      
+      findTeachers(days[curDay-1], start, duration)}
 
-    findTeachers(days[curDay-1], start, duration)}
 
-
-  }
-
-  function fillTable(listTeachers){
-    htmlString = ""
-    var i = 0
-    for (var t in listTeachers){   
-      i = i+1
-      htmlString += '<tr class="tablerow" id="'+t+'"><th scope="row" align="left">' + i + '</th><td class="align">'  + t + '<td class="align">' + listTeachers[t]/60 + '</td></tr>'
     }
     
-    document.getElementById("freeTeachers").innerHTML = htmlString
-
-    var tableRows = document.getElementsByClassName("tablerow")
-
-    for (let i=0; i<tableRows.length;i++){
-      tableRows[i].addEventListener("click", function(){
+    function fillTable(listTeachers){
+      htmlString = ""
+      var i = 0
+      for (var t in listTeachers){   
+        i = i+1
+        htmlString += '<tr class="tablerow" id="'+t+'"><th scope="row" align="left">' + i + '</th><td class="align">'  + t + '<td class="align">' + listTeachers[t]/60 + '</td></tr>'
+      }
+      
+      document.getElementById("freeTeachers").innerHTML = htmlString
+      
+      var tableRows = document.getElementsByClassName("tablerow")
+      
+      for (let i=0; i<tableRows.length;i++){
+        tableRows[i].addEventListener("click", function(){
         populateChartData(tableRows[i].id)
       })
     }
 
     /*<tr><th scope="row" align="left">1</th><td class="align">Sindhu</td><td class="align">3</td></tr> */
-
+    
   }
-
+  
   function getDate(dateString){
     year = parseInt(dateString.split("-")[0])
     month = parseInt(dateString.split("-")[1])   
     day = parseInt(dateString.split("-")[2])
     return new Date(year,month-1,day,0,0,0)    //-1 because Date() takes zero based indexing for month
-
+    
   }
-
-  function populateChartData(choice) {
   
+  function populateChartData(choice) {
+    
     let rows = [];
     let teacherData = data[choice];
     for (var days in teacherData) {
@@ -255,10 +259,10 @@ function idklolremane(time){
       for (var key in day) {
         //for each class in day
         var val = day[key];
-  
+        
         //key is start time
         //val contains data
-  
+        
         //console.log(key);
         //console.log(val.start[0]);
         teacherLoad += val.duration;
@@ -276,14 +280,21 @@ function idklolremane(time){
         getTime(9 * 60, teacherLoad / 5),
       ];
     }
-  
+    
     drawChart(rows, "teacherChart");
   }
   
-
-
+  
+  //main()
+  google.charts.load("current", { packages: ["timeline"], callback: main });
+  
   /* Takes input date
-      If invalid date, takes current date
-      fix end time<start time
+  If invalid date, takes current date
+  fix end time<start time
   
   */
+
+  var timerFunction = setInterval(function() {
+    document.getElementById("timer").innerHTML=  "&ensp;" + new Date().valueOf()/1000 
+    //console.log(new Date().valueOf())
+    }, 50)

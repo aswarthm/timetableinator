@@ -121,7 +121,7 @@ const main = async () => {
   //events = await fetchData("events.json");
   //mergeJson(data, events);
   
-  populateDropdown("data");
+  populateDropdown("Electronics and Communication Engineering");
 
   populateChartData(Object.keys(data)[0]);
 
@@ -134,5 +134,5 @@ google.charts.load("current", { packages: ["timeline"], callback: main }); //cal
 
 var timerFunction = setInterval(function() {
   document.getElementById("timer").innerHTML=  "&ensp;" + new Date().valueOf()/1000 
-  console.log(new Date().valueOf())
+  //console.log(new Date().valueOf())
   }, 50)

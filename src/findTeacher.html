@@ -1,49 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"></link>
-    <title>Find Teachers</title>
-    <style>
-      tr:hover {background-color:aliceblue}
-      .tablerow{
-        padding: auto;
-      }
-    </style>
+  <meta charset="utf-8">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title></title>
 </head>
+
 <body>
-  <input type="date" id="dateInput" onChange="">
-  <input type="time" id="time1" onChange="">
-  <input type="time" id="time2" onChange="">
-  <input type="button" onclick="takeTime()">Search</input>
+  <section id="title">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg">
+        <img src="images/timetable2.png" alt="" class="humanity_pic" id="imgHum">	
+        <h1 class="h1-title" hidden>Timetable<span style="color: #d9dcf5;">inator</span></h1>
 
-  <div id="findTeachers"></div>  
-  <div>
-    <table class="table" style="width:75%" >
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col" style="width:10%" align="left">S No.</th>
-          <th scope="col" style="width:70%" align="left">Name</th>
-          <th scope="col" style="width:20%" align="left">Work hours</th>
-        </tr>
-      </thead>
-      <tbody id="freeTeachers">
-    
-      </tbody>
-    </table>
-  </div>
-  <div id="teacherChart"></div>
-  <a href="/index.html">Timetable page</a>
+        <button class="navbar-toggler navbar-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav" id="ul-nav">
+            <li class="nav-item">
+              <a class="nav-link topics" href="./">Home</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="h3-title" id="timer" style="color:#fcfcfc;"></h1>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  
+  <section id="title-part">
+    <section class="inputData">
+      <input type="date" id="dateInput">
+      <input type="time" id="time1">
+      <input type="time" id="time2">
+      <button class="btn btn-primary" type="button" id="btnSearch" onclick="takeTime()">Search</button>
+    </section>
 
+    <div id="findTeachers"></div>
 
+    <div class="">
+      <div class="" style="clear:both">
+      </div>
+      <div class="details-table">
+        <table class="table " style="width:95%; margin: 0 auto;">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col" style="width:10%">S No.</th>
+              <th scope="col" style="width:40%">Name</th>
+              <th scope="col" style="width:10%">Work Hours</th>
+            </tr>
+          </thead>
+          <tbody id="freeTeachers">
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-    
-  
-  <script type="text/javascript"src="https://www.gstatic.com/charts/loader.js"></script>
+    <div id="teacherChart"></div>
+  </section>
+  <div style="padding-left: 10px; padding-top:30px;">Made with ❤ by Aswarth, Shishira, Saksham, Parakh, Aditya</div>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script defer type="text/javascript" src="findTeacher.js"></script>
+
 </body>
+
 </html>

@@ -1,44 +1,250 @@
-{"Ravishankar S": {
-    "Monday": {
-        "60": {
-            "class": "ACS2(EC203) ",
-            "duration": 60
+{
+    "Kiran V": {
+        "Monday": {
+            "0": {
+                "class": "RM(EC109)",
+                "duration": 60
+            },
+            "150": {
+                "class": "CCN-6D(EC205)",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
         },
-        "315": {
-            "class": "UG MAJOR PROJECT\t",
-            "duration": 120
+        "Tuesday": {
+            "150": {
+                "class": "CCN LAB:D1\t",
+                "duration": 150
+            },
+            "345": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Wednesday": {
+            "0": {
+                "class": "CCN-6D",
+                "duration": 60
+            },
+            "315": {
+                "class": "RM",
+                "duration": 60
+            }
+        },
+        "Thursday": {
+            "60": {
+                "class": "RM",
+                "duration": 60
+            },
+            "150": {
+                "class": "PG MAJOR PROJECT\t",
+                "duration": 120
+            },
+            "315": {
+                "class": "CCN-6D",
+                "duration": 60
+            }
+        },
+        "Friday": {
+            "60": {
+                "class": "CCN-6D",
+                "duration": 60
+            },
+            "150": {
+                "class": "PG MAJOR PROJECT\t",
+                "duration": 120
+            }
         }
     },
-    "Tuesday": {
-        "60": {
-            "class": "ACS2",
-            "duration": 60
+    "Sujatha D Badiger": {
+        "Monday": {
+            "0": {
+                "class": "UG-Tech Seminar\t",
+                "duration": 120
+            },
+            "150": {
+                "class": "CCN LAB:B3\t",
+                "duration": 150
+            },
+            "345": {
+                "class": "E-C(EC218)",
+                "duration": 60
+            }
         },
-        "150": {
-            "class": "PG MAJOR PROJECT\t",
-            "duration": 120
+        "Tuesday": {
+            "60": {
+                "class": "E-C",
+                "duration": 60
+            },
+            "150": {
+                "class": "UG-Major Project\t",
+                "duration": 120
+            },
+            "345": {
+                "class": "E-C",
+                "duration": 60
+            }
         },
-        "315": {
-            "class": "UG MAJOR PROJECT\t",
-            "duration": 120
+        "Wednesday": {
+            "0": {
+                "class": "CCN-6B(EC218)",
+                "duration": 60
+            },
+            "150": {
+                "class": "CCN-6B",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG-Major Project\t",
+                "duration": 120
+            }
+        },
+        "Thursday": {
+            "0": {
+                "class": "PG-Major Project\t",
+                "duration": 120
+            },
+            "150": {
+                "class": "E-C",
+                "duration": 60
+            },
+            "375": {
+                "class": "CCN-6B",
+                "duration": 60
+            }
+        },
+        "Friday": {
+            "0": {
+                "class": "PG-Major Project\t",
+                "duration": 120
+            },
+            "210": {
+                "class": "CCN-6B",
+                "duration": 60
+            },
+            "315": {
+                "class": "ENG LAB: O1\t",
+                "duration": 150
+            }
         }
     },
-    "Wednesday": {
-        "150": {
-            "class": "ACS2",
-            "duration": 60
+    "Rohini Hallikar": {
+        "Monday": {
+            "0": {
+                "class": "\tCCN LAB:A2\t",
+                "duration": 150
+            },
+            "180": {
+                "class": "UG-Major Project\t",
+                "duration": 120
+            },
+            "345": {
+                "class": "UG-Major Project\t",
+                "duration": 120
+            }
+        },
+        "Tuesday": {
+            "150": {
+                "class": "CCN LAB:D1\t",
+                "duration": 150
+            },
+            "375": {
+                "class": "EM-4A(EC108)",
+                "duration": 60
+            }
+        },
+        "Wednesday": {
+            "0": {
+                "class": "CCN LAB:C3\t",
+                "duration": 150
+            },
+            "180": {
+                "class": "PG-Major Project\t",
+                "duration": 120
+            },
+            "345": {
+                "class": "EEP LAB:M1(SLOT 3)\t",
+                "duration": 120
+            }
+        },
+        "Thursday": {
+            "150": {
+                "class": "UG-Tech Seminar\t",
+                "duration": 120
+            },
+            "315": {
+                "class": "CCN LAB:A1\t",
+                "duration": 150
+            }
+        },
+        "Friday": {
+            "60": {
+                "class": "EM-4A",
+                "duration": 60
+            },
+            "150": {
+                "class": "CCN LAB:C2\t",
+                "duration": 150
+            }
         }
     },
-    "Thursday": {},
-    "Friday": {
-        "0": {
-            "class": "ACS2",
-            "duration": 60
+    "Chetana G": {
+        "Monday": {
+            "0": {
+                "class": "CS2 LAB:A1\t",
+                "duration": 150
+            },
+            "405": {
+                "class": "E-D(EC219)",
+                "duration": 60
+            }
         },
-        "150": {
-            "class": "PG MAJOR PROJECT\t",
-            "duration": 120
+        "Tuesday": {
+            "0": {
+                "class": "E-D",
+                "duration": 60
+            },
+            "150": {
+                "class": "EEP LAB:Q1(SLOT 1)\t",
+                "duration": 120
+            },
+            "315": {
+                "class": "UG-Major Project\t",
+                "duration": 120
+            }
+        },
+        "Wednesday": {
+            "0": {
+                "class": "UG-Major project\t",
+                "duration": 120
+            },
+            "315": {
+                "class": "PG-Major project\t",
+                "duration": 120
+            }
+        },
+        "Thursday": {
+            "150": {
+                "class": "UG-Major project\t",
+                "duration": 120
+            },
+            "315": {
+                "class": "UG- Tech Seminar\t",
+                "duration": 120
+            }
+        },
+        "Friday": {
+            "0": {
+                "class": "CS2 LAB:B3\t",
+                "duration": 150
+            },
+            "345": {
+                "class": "E-D",
+                "duration": 60
+            }
         }
     }
-}
 }
