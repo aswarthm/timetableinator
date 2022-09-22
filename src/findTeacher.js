@@ -56,7 +56,7 @@ async function drawChart(rows) {
     min2 = (start+duration)%60
 
     let rows = []
-    var days = ["Monday", "Tuesday", "Wednesday", "Thurdsay", "Friday"]
+    var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
 
 
@@ -200,7 +200,7 @@ function idklolremane(time){
     var curDay = curDate.getDay()
 
 
-    var days = ["Monday", "Tuesday", "Wednesday", "Thurdsay", "Friday"]
+    var days = ["Monday", "Tuesday", "Wednesday", " dsay", "Friday"]
 
     if (duration<=0){
       alert("End time must be after start time")
