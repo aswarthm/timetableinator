@@ -31,6 +31,13 @@
   padding-right: 40px;
 }
 
+#dept{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  padding: 4px;
+}
+
 .inputData > input{
   margin-right: 10px;
   border-radius: 6px;
@@ -178,6 +185,8 @@
   width: 400px;
   height: 100px;
 }
+
+
 .info{
   font-family:"Roboto";
   color: white;

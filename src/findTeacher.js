@@ -1,5 +1,6 @@
 
 var data
+var dept = "Electronics and Communication Engineering"
 
 async function drawChart(rows, elementId) {
     var container = document.getElementById(elementId);
@@ -173,7 +174,7 @@ function idklolremane(time){
     document.getElementById("time1").value = hour + ":00"
     document.getElementById("time2").value = String(parseInt(hour)+1) + ":00"
     console.log(hour)
-    data = await fetchData("data.json")
+    data = await fetchData(dept + ".json")
 
     emptyChart("Friday",480,0)
     //emptyTable()
@@ -247,6 +248,10 @@ function idklolremane(time){
     
   }
   
+  async function deptChange(value){
+    dept = value
+    data = await fetchData(value + ".json")
+  }
   function populateChartData(choice) {
     
     let rows = [];
