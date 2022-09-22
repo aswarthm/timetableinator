@@ -1,5 +1,5 @@
 {
-    " Dr  VEENA DEVI S V": {
+    "Veena Devi S V": {
         "Monday": {
             "0": {
                 "class": "SS-4B(EC103)",
@@ -63,7 +63,7 @@
             }
         }
     },
-    " Dr B S KARIYAPPA": {
+    "B S Kariyappa": {
         "Monday": {
             "60": {
                 "class": "E-D PG(EC109)",
@@ -115,6 +115,50 @@
             },
             "315": {
                 "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        }
+    },
+    "H V Ravish Aradhya": {
+        "Monday": {
+            "210": {
+                "class": "SVD(EC109) ",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Tuesday": {
+            "180": {
+                "class": "SVD",
+                "duration": 60
+            },
+            "195": {
+                "class": " PG MAJOR PROJECT\t",
+                "duration": 240
+            }
+        },
+        "Wednesday": {
+            "150": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Thursday": {
+            "150": {
+                "class": "SVD (T)",
+                "duration": 60
+            }
+        },
+        "Friday": {
+            "60": {
+                "class": "SVD",
+                "duration": 60
+            },
+            "315": {
+                "class": " PG MAJOR PROJECT\t",
                 "duration": 120
             }
         }

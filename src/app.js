@@ -130,3 +130,9 @@ const main = async () => {
 
 //main();//removed because it randomly throws an error when called before chart lib is loaded
 google.charts.load("current", { packages: ["timeline"], callback: main }); //calls main after loading chart library
+
+
+var timerFunction = setInterval(function() {
+  document.getElementById("timer").innerHTML=  "&ensp;" + new Date().valueOf()/1000 
+  console.log(new Date().valueOf())
+  }, 50)

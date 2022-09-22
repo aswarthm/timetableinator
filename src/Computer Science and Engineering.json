@@ -1,0 +1,44 @@
+{"Ravishankar S": {
+    "Monday": {
+        "60": {
+            "class": "ACS2(EC203) ",
+            "duration": 60
+        },
+        "315": {
+            "class": "UG MAJOR PROJECT\t",
+            "duration": 120
+        }
+    },
+    "Tuesday": {
+        "60": {
+            "class": "ACS2",
+            "duration": 60
+        },
+        "150": {
+            "class": "PG MAJOR PROJECT\t",
+            "duration": 120
+        },
+        "315": {
+            "class": "UG MAJOR PROJECT\t",
+            "duration": 120
+        }
+    },
+    "Wednesday": {
+        "150": {
+            "class": "ACS2",
+            "duration": 60
+        }
+    },
+    "Thursday": {},
+    "Friday": {
+        "0": {
+            "class": "ACS2",
+            "duration": 60
+        },
+        "150": {
+            "class": "PG MAJOR PROJECT\t",
+            "duration": 120
+        }
+    }
+}
+}
