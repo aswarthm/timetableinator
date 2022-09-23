@@ -1,0 +1,159 @@
+{
+    
+    "B S Kariyappa": {
+        "Monday": {
+            "60": {
+                "class": "E-D PG(EC109)",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Tuesday": {
+            "60": {
+                "class": "MPMC-4B(EC103)",
+                "duration": 60
+            },
+            "210": {
+                "class": "E-D PG",
+                "duration": 60
+            }
+        },
+        "Wednesday": {
+            "0": {
+                "class": "MPMC-4B",
+                "duration": 60
+            },
+            "150": {
+                "class": "PG MAJOR PROJECT\t",
+                "duration": 120
+            },
+            "375": {
+                "class": "E-D PG",
+                "duration": 60
+            }
+        },
+        "Thursday": {
+            "210": {
+                "class": "MPMC-4B",
+                "duration": 60
+            }
+        },
+        "Friday": {
+            "0": {
+                "class": "E-D PG",
+                "duration": 60
+            },
+            "150": {
+                "class": "PG MAJOR PROJECT\t",
+                "duration": 120
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        }
+    },
+    "H V Ravish Aradhya": {
+        "Monday": {
+            "210": {
+                "class": "SVD(EC109) ",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Tuesday": {
+            "150": {
+                "class": "SVD",
+                "duration": 60
+            },
+            "315": {
+                "class": " PG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Wednesday": {
+            "150": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Thursday": {
+            "150": {
+                "class": "SVD (T)",
+                "duration": 60
+            }
+        },
+        "Friday": {
+            "60": {
+                "class": "SVD",
+                "duration": 60
+            },
+            "315": {
+                "class": " PG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        }
+    },
+    "K R Usha Rani": {
+        "Monday": {
+            "150": {
+                "class": "ECC PG ",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Tuesday": {
+            "0": {
+                "class": "ECC PG(EC203)",
+                "duration": 60
+            },
+            "210": {
+                "class": "EEE(T)-2I ASE001",
+                "duration": 60
+            }
+        },
+        "Wednesday": {
+            "0": {
+                "class": "PG MAJOR PROJECT \t",
+                "duration": 120
+            },
+            "315": {
+                "class": "EEE-2I",
+                "duration": 60
+            }
+        },
+        "Thursday": {
+            "60": {
+                "class": "EEE-2I",
+                "duration": 60
+            },
+            "210": {
+                "class": "ECC PG ",
+                "duration": 60
+            }
+        },
+        "Friday": {
+            "60": {
+                "class": "ECC(T) PG",
+                "duration": 60
+            },
+            "210": {
+                "class": "EEE(T)-2I",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT \t",
+                "duration": 120
+            }
+        }
+    }
+}

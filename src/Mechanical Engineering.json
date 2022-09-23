@@ -1,0 +1,123 @@
+{
+    
+    "Abhay A Deshpande": {
+        "Monday": {
+            "150": {
+                "class": "UG-Major Project\t",
+                "duration": 120
+            },
+            "315": {
+                "class": "EEE(T)-2F(IEM126)",
+                "duration": 60
+            }
+        },
+        "Tuesday": {
+            "60": {
+                "class": "EEE-2F",
+                "duration": 60
+            },
+            "150": {
+                "class": "UG-Major project\t",
+                "duration": 120
+            },
+            "405": {
+                "class": "AE-6(EC217)",
+                "duration": 60
+            }
+        },
+        "Wednesday": {
+            "0": {
+                "class": "UG- Tech Seminar\t",
+                "duration": 120
+            },
+            "150": {
+                "class": "MPMC LAB:A2\t",
+                "duration": 150
+            }
+        },
+        "Thursday": {
+            "0": {
+                "class": "AE-6\t",
+                "duration": 120
+            },
+            "150": {
+                "class": "EEE(T)-2F",
+                "duration": 60
+            },
+            "315": {
+                "class": "PG-Major Project\t",
+                "duration": 120
+            }
+        },
+        "Friday": {
+            "0": {
+                "class": "EEE-2F",
+                "duration": 60
+            },
+            "150": {
+                "class": "PG-Major Project\t",
+                "duration": 120
+            }
+        }
+    },
+    "Kiran V": {
+        "Monday": {
+            "0": {
+                "class": "RM(EC109)",
+                "duration": 60
+            },
+            "150": {
+                "class": "CCN-6D(EC205)",
+                "duration": 60
+            },
+            "315": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Tuesday": {
+            "150": {
+                "class": "CCN LAB:D1\t",
+                "duration": 150
+            },
+            "345": {
+                "class": "UG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        },
+        "Wednesday": {
+            "0": {
+                "class": "CCN-6D",
+                "duration": 60
+            },
+            "315": {
+                "class": "RM",
+                "duration": 60
+            }
+        },
+        "Thursday": {
+            "60": {
+                "class": "RM",
+                "duration": 60
+            },
+            "150": {
+                "class": "PG MAJOR PROJECT\t",
+                "duration": 120
+            },
+            "315": {
+                "class": "CCN-6D",
+                "duration": 60
+            }
+        },
+        "Friday": {
+            "60": {
+                "class": "CCN-6D",
+                "duration": 60
+            },
+            "150": {
+                "class": "PG MAJOR PROJECT\t",
+                "duration": 120
+            }
+        }
+    }
+}
