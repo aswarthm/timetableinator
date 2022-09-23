@@ -53,8 +53,8 @@ function getTime(a, b = 0) {
 }
 
 async function populateDropdown(value) {
-  const data = await fetchData(String(value) + ".json")
-  let list = "";
+  data = await fetchData(String(value) + ".json")
+  var list = "";
 
   for (var item in data) {
     list += '<option value="' + item + '">' + item + "</option>";
@@ -67,6 +67,8 @@ function populateChartData(choice) {
   document.getElementById("volName").innerHTML=choice
   let rows = [];
   let teacherData = data[choice];
+  console.log(data, choice)
+  console.log(teacherData)
   for (var days in teacherData) {
     //for each day in week
     var day = teacherData[days];
@@ -96,7 +98,6 @@ function populateChartData(choice) {
       getTime(9 * 60, teacherLoad / 5),
     ];
   }
-
   drawChart(rows);
 }
 

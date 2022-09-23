@@ -1,7 +1,17 @@
 
 import json
 
-with open('data.json') as file:
+print("Enter Department")
+print("Enter 1.  For Electronics and Communication Engineering")
+print("Enter 2.  For Computer Science and Engineering")
+print("Enter 3.  For Mechanical Engineering")
+print("Enter 4.  For Chemistry")
+print("Enter 5.  For Mathematics")
+dept = int(input())
+files = {1:"Electronics and Communication Engineering.json",2:"Computer Science and Engineering.json",3:"Mechanical Engineering.json", 4:"Chemistry.json",5:"Mathematics.json" }
+f = files[dept]
+
+with open(f) as file:
     data = json.load(file)
 
 print("Enter Teacher's Name: ")
@@ -55,7 +65,7 @@ for day in days:
         subject = input("Enter class name or enter '-1' to go to the next day ")
 
 
-with open("data.json", "w") as file:
+with open(f, "w") as file:
     json.dump(data, file, indent=4)
 
 
