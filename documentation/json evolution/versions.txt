@@ -1,18 +1,18 @@
 //ver1
 {
-    "sindhu":{
+    "teacherName":{
         "Monday":{
-            "UG-Major Project":{
+            "Class A":{
                 "start":[14, 15],
                 "end":[16, 45]
             }
         },
         "Tuesday":{
-            "MPMC LAB:B2":{
+            "Class B":{
                 "start":[12, 30],
                 "end":[13, 30]
             },
-            "MPMC LAB:B2":{
+            "Class C":{
                 "start":[14, 15],
                 "end":[16, 45]
             }
@@ -22,20 +22,20 @@
 
 //ver2
 {
-    "sindhu": {
+    "teacherName": {
         "Monday": {
             "315": {
-                "class": "UG-Major Project",
+                "class": "Class A",
                 "duration": 150
             }
         },
         "Tuesday": {
             "210": {
-                "class": "MPMC LAB:B2",
+                "class": "Class B",
                 "duration": 60
             },
             "315": {
-                "class": "MPMC LAB:B2",
+                "class": "Class C",
                 "duration": 150
             }
         }
