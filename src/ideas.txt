@@ -1,0 +1,40 @@
+
+Teacher on leave thing
+
+Do in dept first.
+Enter student timetable somehow and get teachers timetable
+ enter student timetable for diff classes. store them. display them.
+ make teachers timetable from all student timetables
+
+
+ {
+    "2 A": {
+        "Monday": {
+            "315": {
+                "class": "DSA",
+                "duration": 150,
+                "teacher": "Sindhu"
+            }
+        }
+    }
+}
+
+
+{
+    "Sindhu Rajendran": {
+        "Monday": {
+            "315": {
+                "class": "UG-Major Project",
+                "duration": 150
+            }
+        }
+    }
+}
+
+
+{
+    "2 A": {
+        "DSA": "Sindhu",
+        "ABC": "idk"
+    }
+}
